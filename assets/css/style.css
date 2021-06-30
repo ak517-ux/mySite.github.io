@@ -7,7 +7,7 @@
 }
 
 body{
-    background: url(/assets/img/background_065.jpg);
+    background: url("https://clipart-db.ru/file_content/rastr/background_065.jpg");
 }
 
 
@@ -40,20 +40,20 @@ body{
     margin: 10px;
     cursor: pointer;
     border-radius: 15px;
-    background: url(/assets/img/various-wool-yarn-and-knitting-needles-knitting-hobby-background-copy-space_87646-5329.jpg);
+    background: url("https://image.freepik.com/free-photo/various-wool-yarn-knitting-needles-knitting-hobby-background-copy-space_87646-5329.jpg");
 }
 
 
 
 .hobbies:nth-child(2){
-    background: url(/assets/img/Без\ названия.jpg);
+    background: url("https://lh3.googleusercontent.com/proxy/GxsKJyKybYO4d2K8M70awmRaHt6V7u1zJS2diWa_nrPXx1RugrL4bWQUMEcU_-o3Jx9gWS3n2juhwv5Xum92rT3Wi4r3civBZKopC6sF4FDwBbiewOCFGKG8oPscMWgIj19H");
     background-size: cover;
     align-items: flex-start;
     padding-top: 20px;
 }
 
 .hobbies:nth-child(3){
-    background: url(/assets/img/laptop-1478822_960_720-1240x630.jpg);
+    background: url("https://www.iphones.ru/wp-content/uploads/2017/07/laptop-1478822_960_720-1240x630.jpg");
     background-size: cover;
 }
 
