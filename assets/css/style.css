@@ -1,0 +1,235 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background: url(/assets/img/background_065.jpg);
+}
+
+
+.cont{
+    display: flex;
+    height: 90vh;
+    flex-direction: column;
+    margin-top: 2%;
+    text-align: center;
+    
+}
+
+.menuBlocks{
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.hobbies{
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    width: 30%;
+    text-align: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 15px;
+    background: url(/assets/img/various-wool-yarn-and-knitting-needles-knitting-hobby-background-copy-space_87646-5329.jpg);
+}
+
+
+
+.hobbies:nth-child(2){
+    background: url(/assets/img/Без\ названия.jpg);
+    background-size: cover;
+    align-items: flex-start;
+    padding-top: 20px;
+}
+
+.hobbies:nth-child(3){
+    background: url(/assets/img/laptop-1478822_960_720-1240x630.jpg);
+    background-size: cover;
+}
+
+.hobbies:hover {
+    transition: 0.3s;
+    opacity: 0.7;
+  }
+
+  .carousel-wrapper{
+    height:400px;
+    position:relative;
+    width:800px;
+    margin:0 auto;
+  }
+  .carousel-item{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    padding:25px 50px;
+    opacity:0;
+    transition: all 0.5s ease-in-out;
+  }
+  .arrow{
+    border: solid black;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 12px;
+  }
+  
+  .arrow-prev{
+    left:-30px;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%) rotate(135deg);
+  }
+   
+  .arrow-next{
+      right:-30px;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%) rotate(-45deg);
+    }
+  
+  .light, a{
+    color:white;
+  }
+  
+  @media (max-width: 480px) {
+        .arrow, .light .arrow {
+          background-size: 10px;
+          background-position: 10px 50%;
+        }
+      }
+
+  
+  /*Select every element*/
+  [id^="item"] {
+      display: none;
+    }
+  
+  .item-1 {
+      z-index: 2;
+      opacity: 1;
+    background:url('https://i.mycdn.me/i?r=AzEPZsRbOZEKgBhR0XGMT1RkZLIDGO6pYwu9-n-HpOJhhKaKTM5SRkZCeTgDn6uOyic');
+    background-size:cover;
+    }
+  .item-2{
+    background:url('https://tomtit.tomsk.ru/media/attached_images/45ygvd2nnvts4uc6.jpg');
+     background-size:cover;
+  }
+  .item-3{
+    background:url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/%D0%A3%D1%87%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%B9_%D0%B8%D0%BD%D1%81%D1%82%D0%B8%D1%82%D1%83%D1%82.jpg/550px-%D0%A3%D1%87%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%B9_%D0%B8%D0%BD%D1%81%D1%82%D0%B8%D1%82%D1%83%D1%82.jpg');
+     background-size:cover;
+  }
+  
+.qwe{
+    background-color: white;
+}
+
+  *:target ~ .item-1 {
+      opacity: 0;
+    }
+  
+  #item-1:target ~ .item-1 {
+      opacity: 1;
+    }
+  
+  #item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+      z-index: 3;
+      opacity: 1;
+    }
+
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;        
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.photo{
+    margin-right: 50px;
+}
+
+.photo img{
+    width: 300px;
+}
+
+.contactMe h3 span{
+    margin-left: 20px;
+    font-size: 23px;
+    color: white;
+}
+
+.dws-wrapper{
+ max-width: 650px;
+ margin: 0 auto;
+}
+ul.accordion{
+ display: flex;
+ justify-content: center;
+ margin-top: 30px;
+ padding: 0;
+}
+ul.accordion li{
+ width: 70px;
+
+ overflow: hidden;
+ padding: 1px 1px 0;
+ cursor: pointer;
+ display: block;
+ -webkit-box-shadow: 1px 3px 15px #7e807e;
+ -moz-box-shadow: 1px 3px 15px  #7e807e;
+ box-shadow: 1px 3px 15px  #7e807e;
+ -webkit-transition: all 1.5s;
+ -moz-transition: all 1.5s;
+ -ms-transition: all 1.5s;
+ -o-transition: all 1.5s;
+ transition: all 1.5s;
+}
+ul.accordion img{
+ width: 500px;
+ height: 100%;
+}
+ul.accordion li:hover{
+ width: 500px;
+
+ box-shadow: 1px 3px 15px #36c5fa;
+ transition: all 1s;
+}
+ul.accordion li:nth-child(4){
+ width: 500px;
+}
+ul.accordion:hover li:nth-child(4){
+ width: 70px;
+}
+ul.accordion li:nth-child(4):hover{
+ width: 500px;
+}
+
+.return img{
+    width: 70px;
+    cursor: pointer;
+}
+
+.return img:hover{
+    transition: 0.4s;
+    width: 76px;
+    height: 70px;
+}
+
